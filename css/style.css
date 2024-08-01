@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('../img/FD1Win11.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+section {
+    margin: 80px 0 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 10%;
+    background: rgba(0, 0, 0, 0.7); /* Assure un contraste pour le texte */
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.home-content h2 {
+    color: #00abf0;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #cccccc;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-box a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #00abf0, #1e3c72);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-box a:hover {
+    background: linear-gradient(45deg, #1e3c72, #00abf0);
+}
+
+.aboutme-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.tabs .language ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #444;
+}
+
+.tabs .language li {
+    margin: 0 10px;
+}
+
+.tabs .language a {
+    color: #ccc;
+    padding-bottom: 10px;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tabs .language a.active,
+.tabs .language a:hover {
+    color: #fff;
+    border-bottom: 2px solid #00abf0;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.tab-content ul li {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    min-width: 300px;
+}
+
+.content-box h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #00abf0;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+}
+
+.content-box a {
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.content-box a:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00abf0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #081b29;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1e3c72;
+}
